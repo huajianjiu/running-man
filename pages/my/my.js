@@ -26,7 +26,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    // 改变选中状态
+    this.getTabBar().setData({active:3})
   },
 
   /**

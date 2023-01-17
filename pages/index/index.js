@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    screenHeight:667,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -18,11 +19,17 @@ Page({
     })
   },
   onLoad() {
+    wx.getSystemInfoSync(res=>{
+      this.screenHeight = res.screenHeight;
+    })
     if (wx.getUserProfile) {
       this.setData({
         canIUseGetUserProfile: true
       })
     }
+  },
+  onShow(){
+    this.getTabBar().setData({active:0})
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
