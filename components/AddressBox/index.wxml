@@ -1,0 +1,40 @@
+<!--components/AddressBox.wxml-->
+<view class="tab-item-box">
+<!-- <view class="tab-item-tip">
+          附近跑腿少，可稍后下单
+        </view> -->
+  <view class="address-box" style="{{reverse?'flex-direction:column-reverse':''}}" >
+    <!-- 寄货 -->
+    <view class="address-box-inner">
+      <view class="address-icon">
+        <image wx:if="{{reverse}}" class="address-icon-img" src="/asset/icon/receive.png"/> 
+        <image wx:else class="address-icon-img" src="/asset/icon/post.png"/>
+      </view>
+      <view class="address-input-receive">
+        <view class="address-input-address">{{text1}}</view>
+      </view>
+      <view class="address-input-button">
+        <view class="input-button">
+          地址簿  <van-icon color="#0E1E40" name="arrow" />
+        </view>
+      </view>
+    </view>
+    <view class="border"></view>
+    <!-- 收货 -->
+    <view class="address-box-inner">
+      <view class="address-icon">
+        <image wx:if="{{reverse}}" class="address-icon-img" src="/asset/icon/post.png"/>
+        <image wx:else class="address-icon-img" src="/asset/icon/receive.png"/>
+      </view>
+      <view class="address-input">
+        <view class="address-input-address">{{text2}}</view>
+        <view class="address-input-info">{{info}}</view>
+      </view>
+      <view class="address-input-button">
+        <view class="input-button">
+          地址簿  <van-icon color="#0E1E40" name="arrow" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

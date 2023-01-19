@@ -1,5 +1,5 @@
 // custom-tab-bar/custom-tab-bar.js
-Page({
+Component({
   data: {
     active: 0,
     list:[
@@ -29,9 +29,11 @@ Page({
       },
     ]
   },
-  onChange(event) {
-    wx.switchTab({
-      url: this.data.list[event.detail].url
-    })
+  methods:{
+    onChange(event) {
+      wx.switchTab({
+        url: this.data.list[event.detail].url
+      })
+    }
   }
 });

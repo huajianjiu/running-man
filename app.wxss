@@ -18,3 +18,4 @@
   /* tab 文字选中 */
   color:#2582CB;
 }
+@import '/asset/font/iconfont.wxss';

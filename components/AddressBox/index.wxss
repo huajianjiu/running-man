@@ -1,0 +1,86 @@
+.tab-item-box {
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+}
+.tab-item-box .tab-item-tip {
+  font-size: 24rpx;
+  color: #545864;
+}
+.tab-item-box .address-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tab-item-box .address-box .border {
+  margin: 20rpx 0;
+  width: 100%;
+  border-top: 1px solid #f3f3f3;
+}
+.tab-item-box .address-box .address-box-inner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tab-item-box .address-box .address-box-inner .address-icon {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+}
+.tab-item-box .address-box .address-box-inner .address-icon .address-icon-img {
+  width: 40rpx;
+  height: 40rpx;
+}
+.tab-item-box .address-box .address-box-inner .address-input {
+  display: flex;
+  padding: 10rpx 25rpx;
+  flex-direction: column;
+}
+.tab-item-box .address-box .address-box-inner .address-input .address-input-address {
+  font-size: 32rpx;
+  font-weight: bold;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.tab-item-box .address-box .address-box-inner .address-input .address-input-info {
+  font-size: 24rpx;
+  color: #bdbec3;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.tab-item-box .address-box .address-box-inner .address-input-receive {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+}
+.tab-item-box .address-box .address-box-inner .address-input-receive .address-input-address {
+  box-sizing: border-box;
+  padding: 0 25rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  vertical-align: top;
+}
+.tab-item-box .address-box .address-input-button {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+.tab-item-box .address-box .address-input-button .input-button {
+  color: #2582CB;
+}
+.tab-item-box .address-box .address-input-button .input-button::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50rpx;
+  left: 500rpx;
+  height: 30rpx;
+  border-right: 2px solid #f3f3f3;
+}

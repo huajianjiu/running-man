@@ -7,13 +7,13 @@
       slot="icon"
       src="{{item.icon}}"
       mode="aspectFit"
-      style="width: 30px; height: 18px;"
+      style="width:30px;height: 30px;"
     />
     <image
       slot="icon-active"
       src="{{item.iconSelected}}"
       mode="aspectFit"
-      style="width: 30px; height: 18px;"
+      style="width:30px;height: 30px;"
     />
     {{item.text}}
   </van-tabbar-item>

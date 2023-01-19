@@ -1,14 +1,35 @@
 <!--index.wxml-->
-<van-nav-bar class="navbar-header" custom-style="background-color: transparent;" fixed border="{{false}}">
+<van-nav-bar class="navbar-header" custom-style="background-color: {{navColor}};" fixed border="{{false}}">
   <view class="header-logo" slot="left">
-    跑跑侠
+    <view>
+      <image src="{{logoURL}}" mode="heightFix" style="height: 20px;" />
+    </view>
   </view>
   <view slot="title" class="header-position">
-    <view class="inner-box-scroll">
-      你好你好
+    <view class="{{isScroll ? 'inner-box-scroll' : 'inner-box'}}">{{position}}<text class="iconfont icon-weizhi"></text>
     </view>
-    <!-- <van-icon name="arrow-down" /> -->
   </view>
 </van-nav-bar>
 <view class="container">
+<swiper class="swiper-section" 	circular>
+  <swiper-item wx:for="{{swiperList}}" wx:key="index">
+    <image src="{{item}}" class="swiper-image"/>
+  </swiper-item>
+</swiper>
+<view class="content">
+    <view class="content-top">
+      <van-tabs class="vant-tab" title-active-color="black" title-inactive-color="#878c9f" color="#008eff" active="{{ active }}" bind:change="onChange">
+      <van-tab class="{{current==0?'vant-selected':''}}" title="取快递">
+        <address-box></address-box>
+      </van-tab>
+      <van-tab class="{{current==1?'vant-selected':''}}" title="寄快递">
+        <address-box reverse></address-box>
+      </van-tab>
+      <van-tab class="{{current==2?'vant-selected':''}}" title="取外卖">内容 3</van-tab>
+    </van-tabs>
+    </view>
+    <view  class="content-bottom">
+      
+    </view>
+  </view>
 </view>
