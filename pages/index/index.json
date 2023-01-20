@@ -2,7 +2,9 @@
   "usingComponents": {
     "van-tab": "@vant/weapp/tab/index",
   "van-tabs": "@vant/weapp/tabs/index",
-  "address-box":"/components/AddressBox/index"
+  "address-box":"/components/AddressBox/index",
+  "van-row": "@vant/weapp/row/index",
+  "van-col": "@vant/weapp/col/index"
   },
   "navigationStyle": "custom"
 }

@@ -1,1 +1,52 @@
-/* pages/my/my.wxss */
+.my-container {
+  padding-bottom: 50px;
+}
+.my-container .userinfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 15px 20px;
+}
+.my-container .userinfo .userinfo-phone {
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.my-container .money {
+  width: 690rpx;
+  height: 80px;
+  margin: 0 15px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #DCDCDC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.my-container .money .money-title {
+  line-height: 40px;
+  font-size: 16px;
+  height: 40px;
+}
+.my-container .money .money-mount {
+  color: #008CFF;
+  font-size: 18px;
+}
+.my-container .money .money-mount .logo {
+  font-size: 12px;
+}
+.my-container .menu {
+  margin: 0 15px 20px;
+}
+.my-container .menu .menu-item {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.my-container .menu .menu-item .menu-item-img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}

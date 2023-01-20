@@ -4,10 +4,10 @@
   border-radius: 15px;
   width: 100%;
   background-color: #fff;
-  padding: 10px;
+  padding: 10px 15px;
 }
 .tab-item-box .tab-item-tip {
-  font-size: 24rpx;
+  font-size: 10px;
   color: #545864;
 }
 .tab-item-box .address-box {
@@ -42,13 +42,13 @@
   flex-direction: column;
 }
 .tab-item-box .address-box .address-box-inner .address-input .address-input-address {
-  font-size: 32rpx;
+  font-size: 14px;
   font-weight: bold;
   height: 50rpx;
   line-height: 50rpx;
 }
 .tab-item-box .address-box .address-box-inner .address-input .address-input-info {
-  font-size: 24rpx;
+  font-size: 12px;
   color: #bdbec3;
   height: 50rpx;
   line-height: 50rpx;
@@ -61,7 +61,7 @@
 .tab-item-box .address-box .address-box-inner .address-input-receive .address-input-address {
   box-sizing: border-box;
   padding: 0 25rpx;
-  font-size: 32rpx;
+  font-size: 14px;
   font-weight: bold;
   vertical-align: top;
 }
@@ -73,6 +73,7 @@
   flex: 1;
 }
 .tab-item-box .address-box .address-input-button .input-button {
+  font-size: 12px;
   color: #2582CB;
 }
 .tab-item-box .address-box .address-input-button .input-button::before {

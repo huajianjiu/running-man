@@ -1,2 +1,52 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<van-nav-bar
+  title="我的"
+  placeholder
+  border="{{false}}"
+  fixed
+/>
+<view class="my-container">
+<view class="userinfo">
+  <van-image class="userinfo-image" round width="60" height="60" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+  <view class="userinfo-phone">
+    166****8045
+  </view>
+</view>
+<view wx:if="{{isPoster}}" class="money">
+  <view class="money-title"> 总收入</view>
+  <view  class="money-mount">
+    <text class="logo">￥</text> 0
+  </view>
+</view>
+<view class="menu">
+  <view wx:if="{{isPoster}}" class="menu-item">
+    <image class="menu-item-img" src="/asset/icon/my-income.png"/>
+    <view class="menu-item-text">我的收入</view>
+  </view>
+  <view wx:if="{{isPoster}}" class="menu-item">
+    <image class="menu-item-img" src="/asset/icon/my-receive-order.png"/>
+    <view class="menu-item-text">我接的订单</view>
+  </view>
+  <view class="menu-item">
+    <image class="menu-item-img" src="/asset/icon/my-order.png"/>
+    <view class="menu-item-text">我收到/寄出的订单</view>
+  </view>
+  <view class="menu-item">
+    <image class="menu-item-img" src="/asset/icon/my-book.png"/>
+    <view class="menu-item-text">地址簿</view>
+  </view>
+  <view class="menu-item">
+    <image class="menu-item-img" src="/asset/icon/my-kefu.png"/>
+    <view class="menu-item-text">联系客服</view>
+  </view>
+  <view class="menu-item">
+    <image class="menu-item-img" src="/asset/icon/my-feedback.png"/>
+    <view class="menu-item-text">意见反馈</view>
+  </view>
+  <view class="menu-item">
+    <image class="menu-item-img" src="/asset/icon/my-setting.png"/>
+    <view class="menu-item-text">设置</view>
+  </view>
+</view>
+  
+</view>

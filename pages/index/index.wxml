@@ -1,8 +1,8 @@
 <!--index.wxml-->
-<van-nav-bar class="navbar-header" custom-style="background-color: {{navColor}};" fixed border="{{false}}">
+<van-nav-bar z-index="{{6}}" class="navbar-header" custom-style="background-color: {{navColor}};" fixed border="{{false}}">
   <view class="header-logo" slot="left">
-    <view>
-      <image src="{{logoURL}}" mode="heightFix" style="height: 20px;" />
+    <view class="logo-img">
+      <image src="{{logoURL}}" style="height: 20px;" mode="heightFix" />
     </view>
   </view>
   <view slot="title" class="header-position">
@@ -10,8 +10,8 @@
     </view>
   </view>
 </van-nav-bar>
-<view class="container">
-<swiper class="swiper-section" 	circular>
+<view class="container" style="height:{{screenHeight+'px'}}">
+<swiper class="swiper-section" 	circular 	autoplay>
   <swiper-item wx:for="{{swiperList}}" wx:key="index">
     <image src="{{item}}" class="swiper-image"/>
   </swiper-item>
@@ -29,7 +29,88 @@
     </van-tabs>
     </view>
     <view  class="content-bottom">
-      
+      <van-row>
+        <van-col span="12">
+          <view class="bottom-item">
+          <view class="item-text">
+            <view class="item-text-title">
+              帮买
+            </view>
+            <view class="item-text-desc">
+              零食 饮料 生活用品 
+            </view>
+          </view>
+          <view class="item-icon">
+            <image class="item-icon-img" src="/asset/icon/buy.png" mode="widthFix"/>
+          </view>   
+        </view>
+        </van-col>
+        <van-col span="12">
+        <view class="bottom-item">
+          <view class="item-text">
+            <view class="item-text-title">
+              帮打印
+            </view>
+            <view class="item-text-desc">
+              打印复印 资料 题目
+            </view>
+          </view>
+          <view class="item-icon">
+            <image class="item-icon-img" src="/asset/icon/printer.png" mode="widthFix"/>
+          </view>   
+        </view>
+        </van-col>
+        <van-col span="12">
+          <view class="bottom-item">
+          <view class="item-text">
+            <view class="item-text-title">
+              帮送
+            </view>
+            <view class="item-text-desc">
+              礼物 物品 大件行李
+            </view>
+          </view>
+          <view class="item-icon">
+            <image class="item-icon-img" src="/asset/icon/send.png" mode="widthFix"/>
+          </view>   
+        </view>
+        </van-col>
+        <van-col span="12">
+          <view class="bottom-item">
+          <view class="item-text">
+            <view class="item-text-title">
+              帮排队
+            </view>
+            <view class="item-text-desc">
+              领书 洗澡 购物
+            </view>
+          </view>
+          <view class="item-icon">
+            <image class="item-icon-img" src="/asset/icon/paidui.png" mode="widthFix"/>
+          </view>   
+        </view>
+        </van-col>
+    </van-row>
+    </view>
+    <view class="little-swiper">
+      <swiper class="little-swiper-ad">
+        <swiper-item>
+          <image class="little-swiper-img" src="/public/ad.jpg" mode="widthFix"/>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="sale-promotion">
+      <view class="sale-promotion-title">精选活动</view>
+      <van-row>
+        <van-col span="12">
+          <view class="sale-promotion-card">
+            <image class="sale-promotion-card-img" src="/public/huodong.jpg" mode="widthFix"/>
+          </view>
+        </van-col>
+      </van-row>
+    </view>
+    <view class="bottom-logo">
+      <image class="bottom-logo-img" src="/asset/icon/slogn.png" mode="heightFix"/>
     </view>
   </view>
 </view>
