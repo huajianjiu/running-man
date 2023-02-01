@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tab-list":"/components/TabList",
+    "swipe-tab":"/components/SwipeTab"
+  }  
 }

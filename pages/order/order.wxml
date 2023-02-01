@@ -1,2 +1,14 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<van-nav-bar title="订单列表" placeholder border="{{false}}" fixed />
+<view class="tab">
+  <view class="tab-item {{active==1?'active':''}}" data-current="1" bindtap="changeTab">我寄的</view>
+  <view class="tab-item {{active==2?'active':''}}" data-current="2" bindtap="changeTab">我收的</view>
+</view>
+<view>
+  <view wx:if="{{active==1}}" class="tab-send">
+    <swipe-tab></swipe-tab>
+    <!-- <tab-list></tab-list> -->
+  </view>
+  <view wx:if="{{active==2}}" class="tab-receive">
+    <!-- <tab-list></tab-list> -->
+  </view>
+</view>

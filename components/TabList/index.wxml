@@ -1,0 +1,8 @@
+<!--components/TabList/TabList.wxml-->
+<van-tabs swipeable animated color="#008eff" active="{{ active }}"  bind:change="onTabChange"  >
+  <van-tab title="全部">内容 1</van-tab>
+  <van-tab title="待发布">内容 2</van-tab>
+  <van-tab title="进行中">内容 2</van-tab>
+  <van-tab title="已完成">内容 3</van-tab>
+  <van-tab title="已取消">内容 4</van-tab>
+</van-tabs>

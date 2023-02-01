@@ -22,11 +22,9 @@ Component({
   observers:{
     reverse(newVal){
       if(newVal){
-        console.log(11111);
         this.setData({text2:"填写发货地址"});
         this.setData({info:"填写发货信息"});
       }
-      console.log(newVal);
     }
   },
 

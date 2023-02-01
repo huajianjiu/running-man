@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    active:1,
+    isShow:false
   },
 
   /**
@@ -63,5 +64,9 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  changeTab(e){
+    const current = e.target.dataset.current;
+    this.setData({active:current});
   }
 })
